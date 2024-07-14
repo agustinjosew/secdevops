@@ -35,3 +35,11 @@ Me gustó este tema musical para trabajar estos conceptos [YouTube](https://yout
 
 - **Endpoint `/auth_bypass`:** Muestra una vulnerabilidad donde la autenticación puede ser evadida.
 
+## Cómo Desplegar la Aplicación en Vercel
+
+### Prerrequisitos
+
+- Tener una cuenta en [Vercel](https://vercel.com/).
+- Tener Vercel CLI instalado. Podéss instalarlo usando npm:
+  ```bash
+  npm install -g vercel
