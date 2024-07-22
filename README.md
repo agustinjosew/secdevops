@@ -2,7 +2,7 @@
 
 Este repositorio contiene una aplicación web vulnerable diseñada para demostrar y aprender sobre diversas vulnerabilidades de seguridad comunes en aplicaciones web.
 
-## My focus zone 
+## My focus zone
 
 Me gustó este tema musical para trabajar estos conceptos [YouTube](https://youtu.be/XkVC62yzxlg?si=r8sc-R2SGcnx6IW5).
 
