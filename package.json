@@ -4,13 +4,18 @@
       "description": "websec examples",
       "main": "server.js",
       "dependencies": {
-            "async": "3.2.4",
-            "bcrypt": "5.0.1",
+            "async": "^3.2.4",
+            "bcrypt": "^5.0.1",
             "body-parser": "^1.20.0",
             "express": "^4.18.1",
-            "express-handlebars": "2.0.1",
+            "express-handlebars": "^5.3.3",
             "express-session": "^1.17.3",
-            "express-subdomain": "1.0.1",
-            "request": "2.88.2"
+            "express-subdomain": "^1.0.1",
+            "request": "^2.88.2",
+            "graceful-fs": "^4.2.10",
+            "natives": "^1.1.6"
+      },
+      "engines": {
+            "node": ">=14.0.0"
       }
 }
