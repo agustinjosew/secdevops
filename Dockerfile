@@ -1,24 +1,20 @@
-# Usar una imagen base de Node.js 8
-FROM node:8
+# Usa una imagen base de Node.js
+FROM node:14
 
-# Establecer el directorio de trabajo
+# Establece el directorio de trabajo en el contenedor
 WORKDIR /usr/src/app
 
-# Copiar package.json y package-lock.json primero para aprovechar la caché de Docker
+# Copia el package.json y el package-lock.json
 COPY package*.json ./
 
-# Instalar dependencias
+# Instala las dependencias de la aplicación
 RUN npm install
 
-# Copiar el resto del código fuente al contenedor
+# Copia el resto de los archivos de la aplicación
 COPY . .
 
-# Exponer el puerto que la aplicación utilizará
+# Expone el puerto que la aplicación usa
 EXPOSE 8080
 
-# Ejecutar la aplicación con un usuario no root
-RUN adduser --disabled-password appuser
-USER appuser
-
-# Comando por defecto para ejecutar la aplicación
-CMD ["node", "server.js"]
+# Define el comando para correr la aplicación
+CMD ["npm", "start"]
